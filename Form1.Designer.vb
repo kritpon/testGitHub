@@ -22,17 +22,31 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.Yellow
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label1.Location = New System.Drawing.Point(29, 52)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(252, 33)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1620, 1085)
+        Me.ClientSize = New System.Drawing.Size(802, 458)
+        Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents Label1 As Label
 End Class
